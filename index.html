@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gradient-to-br from-blue-700 to-indigo-900 min-h-screen 
+            flex items-center justify-center p-4 text-white">
+
+    <div class="backdrop-blur-xl bg-white/10 shadow-2xl p-8 rounded-3xl w-full max-w-md 
+                border border-white/20 animate-fadeIn">
+
+        <h1 class="text-4xl font-bold tracking-wider text-center mb-6 drop-shadow animate-glow">
+            TIC-TAC-TOE
+        </h1>
+
+        <h4 id="screen" 
+            class="text-center text-lg font-semibold mb-6 animate-screen">
+            PLAYER 1 TURN FOLLOWS
+        </h4>
+
+        <div class="grid grid-cols-3 gap-4 justify-center mx-auto">
+            <button class="sq1 r cell"></button>
+            <button class="sq2 r cell"></button>
+            <button class="sq3 r cell"></button>
+            <button class="sq4 r cell"></button>
+            <button class="sq5 r cell"></button>
+            <button class="sq6 r cell"></button>
+            <button class="sq7 r cell"></button>
+            <button class="sq8 r cell"></button>
+            <button class="sq9 r cell"></button>
+        </div>
+
+        <button class="reset mt-8 w-full py-2 rounded-xl bg-yellow-500 
+                       hover:bg-green-500 shadow-xl transition-all 
+                       hover:scale-105 active:scale-95">
+            RESET GAME
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
